@@ -39,6 +39,7 @@ const char* endings[] = {"@gmail.com", "@hotmail.com", "@live.co.uk", "@mail.com
 #define MIN_LEN_PASSW 8
 #define MAX_LEN_PASSW 20
 
+
 char getRandomChar(const char charset[], int maxIndex) {
     return charset[rand() % maxIndex];
 }
@@ -88,7 +89,6 @@ void generateCombos(int count) {
 
     fclose(output);
     printf("successfully generated \"%s\" with %d email:password combos!\n", FILENAME, count);
-    return 0;
 }
 
 int main(int argc, char** argv) {
